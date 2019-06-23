@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Consencionario de Vehiculos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+  <div class="tabs-container">
+    <ul id="js-tabs" class="tabs">
+      <li class="tabs-item active">Principal</li>
+      <li class="tabs-item">Create Brands</li>
+      <li class="tabs-item">Create Cars</li>
+    </ul>
+
+    <div class="content-tabs">
+      <!-- Principal -->
+      <div class="content-item active">
+        <select id="">
+          <option value="">Sort By</option>
+          <option value="Artist">Artist</option>
+          <option value="Song Name">Song Name</option>
+          <option value="Year">Year</option>
+          <option value="Started">Started</option>
+          <option value="Album">Album</option>
+        </select>
+
+        <!-- SEARCH -->
+        <input placeholder="Search" type="search" id="space" value="">
+
+
+        <div class="row">
+          <ul id="column" class="column draggable">
+            <li data-id="" draggable="true" data-src=""><span>y</span></li>
+          </ul>
+          <ul id="column-2" class="column draggable">
+          </ul>
+        </div>
+      </div>
+
+      <!-- Create of Brands -->
+      <div class="content-item">
+        <div class="create-Brands">
+          <p class="tittle">Brands</p>
+        </div>
+        <div class="brands-container">
+          <div class="brand-content">
+            <form id="form" action="" class="brand-form">
+              <label for="name-brand"> Name of Brand:</label>
+              <input type="text" id="name-brand" class="space-form" placeholder="Name of Brand">
+
+              <label for="descrip-brand">Description:</label>
+              <input type="text" id="descrip-brand" class="space-form" placeholder="Description">
+
+              <div class="content-btns">
+                <input type="reset" class="mgnT" value="RESET">
+                <input method="report" class="mgnT wbtn" value="CSV">
+                <input type="submit" id="save" class="mgnT" value="SAVE">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create of Cars -->
+      <div class="content-item">
+        <div class="create-Brands">
+          <p class="tittle">Cars</p>
+        </div>
+        <div class="brands-container">
+          <div class="brand-content">
+            <form id="form" action="" class="brand-form">
+              <label for="name-car"> Name of Car:</label>
+              <input type="text" id="name-car" class="space-form" placeholder="Name of Car">
+
+              <label for="year">Year:</label>
+              <input type="text" id="year" class="space-form" placeholder="Year">
+
+              <label for="descrip-car"> Description:</label>
+              <input type="text" id="descrip-car" class="space-form w-space" placeholder="Description">
+
+              <label for="color">Color:</label>
+              <input type="text" id="color" class="space-form" placeholder="Color">
+
+              <label for="date"> Date:</label>
+              <input type="date" id="date" class="space-form" placeholder="Date">
+
+              <div class="content-btns">
+                <input type="reset" class="mgnT" value="RESET">
+                <input method="report" class="mgnT wbtn" value="CSV">
+                <input type="submit" id="save" class="mgnT" value="SAVE">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="js/search.js"></script>
+  <script src="js/tabs.js"></script>
+</body>
+
+</html>

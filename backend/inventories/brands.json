@@ -53,10 +53,5 @@
     "id":11,
     "Brand":"Ford",
     "Description":"La Ford Motor Company, mas conocida como Ford, es una empresa multinacional estadounidense."
-  },
-  {
-    "id":12,
-    "Brand":"Nissan",
-    "Description":"Nissan Motor Company, Limited es un fabricante japonés de automóviles, con base en Yokohama. Su nombre común, Nissan, es un acrónimo de Nippon Sangyo. Está entre las principales compañías automotrices en términos de producción anual de vehículos."
   }
 ]

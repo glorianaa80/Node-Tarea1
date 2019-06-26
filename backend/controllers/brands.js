@@ -6,10 +6,10 @@ const {
   end,
   getData,
   throwErr
-} = require('../method');
+} = require('./method');
 
 function GET(req, res) {
-  end(res, brands);
+  end(res, {data:brandsJson});
 }
 
 function POST(req, res) {
@@ -17,6 +17,7 @@ function POST(req, res) {
       res,
       req
   }, parsed => {
+    console.log(parsed);
       let prop = parsed.brand ? parsed.brand.toLowerCase() : null;
       let obj = {
           id: brandsJson.length + 1,
@@ -24,41 +25,19 @@ function POST(req, res) {
           description: parsed.description ? parsed.description : null
       };
       if (prop) {
-          if (brandsJson.indexOf(prop) === -1) {
+          if (brandsJson.map(o => o.brand).indexOf(prop) === -1) {
             brandsJson.push(obj);
-              fs.writeFile(path.resolve('../inventories/brands.json'), JSON.stringify(brandsJson), throwErr);
-              success(res, brandsJson);
+              fs.writeFile(path.resolve('./inventories/brands.json'), JSON.stringify(brandsJson), throwErr);
+              end(res, {data: brandsJson});
           } else
-              error(res, {error:'The brand already exists'});
+              end(res, {error:'The brand already exists'});
       } else {
-          error(res, {error:`The property <<brand>> returns ${prop} in the object ${JSON.stringify(parsed)}`});
+          end(res, {error:`The property <<brand>> returns ${prop} in the object ${JSON.stringify(parsed)}`});
       }
   });
 }
 
-// function POST(req, res) {
-//   getData({
-//     res,
-//     req
-//   }, parsed => {
-//     let prop = parsed.brand ? parsed.brand.toLowerCase() : null;
-//     let obj = {
-//       id: brands.length + 1,
-//       brand: prop,
-//       description: parsed.description ? parsed.description : null
-//     }
-//     if (prop) {
-//       if (brands.indexOf(prop) === -1) {
-//         brands.push(obj);
-//         fs.writeFile(path.resolve('../inventories/brands.json'), JSON.stringify(brands), throwErr);
-//         end(res, {brands});
-//       } else
-//         end(res, {error:'The brand already exists'});
-//     } else {
-//       end(res, {error:`The property <<brand>> returns ${prop} in the object ${JSON.stringify(parsed)}`});
-//     }
-//   });
-// }
+
 
 module.exports = {
   GET,

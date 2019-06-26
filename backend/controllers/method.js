@@ -1,3 +1,5 @@
+const qs = require('querystring');
+
 function okPath(req, string) {
   return new RegExp(`^(${string})`, 'gm').test(req.url);
 }

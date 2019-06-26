@@ -6,11 +6,11 @@ const brands = require('./controllers/brands.js');
 
 const route = {
 	cars : {
-		path:  'api/v1/cars',
+		path:  '/api/v1/cars',
 		controller: cars,
 	},
 	brands: {
-		path:  'api/v1/brands',
+		path:  '/api/v1/brands',
 		controller: brands,
 	}
 }

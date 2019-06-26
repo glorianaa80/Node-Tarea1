@@ -1,13 +1,13 @@
 const {
   okPath,
   end
-} = require('../method');
+} = require('./method');
 
-
-
+const brands = require('../inventories/brands.json');
 function register(route) {
   return (req, res) => {
     res.setHeader('Acces-Control-Allow-Origin', '*');
+
     if (okPath(req, route.brands.path)) {
       let a = route.brands
         .controller[req.method];

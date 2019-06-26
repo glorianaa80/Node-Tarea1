@@ -17,7 +17,6 @@ function POST(req, res) {
       res,
       req
   }, parsed => {
-    console.log(parsed);
       let prop = parsed.brand ? parsed.brand.toLowerCase() : null;
       let obj = {
           id: brandsJson.length + 1,

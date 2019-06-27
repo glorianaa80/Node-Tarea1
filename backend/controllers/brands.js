@@ -36,9 +36,19 @@ function POST(req, res) {
   });
 }
 
-
+function reportBrands(req, res, routeBrands) {	
+  let brands = require(brandsJson);	
+   brands.reduce((t, brand, i) => {	
+			Object.keys(brand).forEach(key => {	
+				t += `${key}:${brand[key]}`;	
+				t += i < brands.length ? '\n' : '';	
+			});	
+			return t;	
+		}, '');
+}
 
 module.exports = {
   GET,
-  POST
+  POST,
+  reportBrands
 };

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Consencionario de Vehiculos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
 </head>
 
 <body>
@@ -49,7 +49,7 @@
         </div>
         <div class="brands-container">
           <div class="brand-content">
-            <form id="form" action="" class="brand-form">
+            <form id="form" action="http://localhost:5000/api/v1/brands" method="POST" class="brand-form">
               <label for="name-brand"> Name of Brand:</label>
               <input type="text" id="name-brand" class="space-form" placeholder="Name of Brand">
 
@@ -73,7 +73,7 @@
         </div>
         <div class="brands-container">
           <div class="brand-content">
-            <form id="form" action="" class="brand-form">
+            <form id="form" action="http://localhost:5000/api/v1/cars" class="brand-form" method="POST">
               <label for="name-car"> Name of Car:</label>
               <input type="text" id="name-car" class="space-form" placeholder="Name of Car">
 
@@ -103,8 +103,9 @@
   </div>
 
 
-  <script src="js/search.js"></script>
-  <script src="js/tabs.js"></script>
+  <script src="../backend/index.js"></script>
+  <script src="./fetch.js"></script>
+  <script src="./tabs.js"></script>
 </body>
 
 </html>

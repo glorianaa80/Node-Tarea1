@@ -1,39 +1,33 @@
-[
-  {
-    "id":1,
-    "Name":"huracán",
-    "BrandId":1,
-    "Year":2019,
-    "Description":"Su V10 de 640 CV palpita y ruge con furor, mientras que el solo del tubo de escape superdeportivo silencia cualquier otra cosa. Las líneas aerodinámicas, perfectas y estilizadas, surcan el aire, mientras surcas la ola del placer de conducción más puro.",
-    "Color":"green",
-    "Date": "21/06/2019"
-  },
-  {
-    "id": 2,
-    "Name":"yaris",
-    "BrandId": 8,
-    "Year":2019,
-    "Description":"Un vehículo versátil, pensado para conductores dinámicos que buscan experiencias únicas y ahorro garantizado gracias a su motor Dual VVT-i, que te dará horas de cómoda conducción con gastos mínimos de combustible.",
-    "Color":"white",
-    "Date": "21/06/2019"
-  },
-  {
-    "id":3,
-    "Name":"corolla",
-    "BrandId":8,
-    "Year":2019,
-    "Description":"El nuevo Toyota Corolla no solo es el carro más vendido el mundo. Su nueva versión, completamente renovada, eleva todo lo que siempre te ha encantado de este emblemático Toyota: su diseño, dinamismo, confort, calidad y ahora más seguro que nunca gracias a la tecnología Toyota Safety Sense*.",
-    "Color":"blue",
-    "Date": "21/06/2019"
-  },
-  {
-    "id":4,
-    "Name":"polo",
-    "BrandId":10,
-    "Year":2019,
-    "Description":"El Polo tiene un aspecto inconfundible y deportivo. Con su largo capó, la parte frontal rsulta más ancha y dinamica gracias a sus lineas horinzontales. Su aspecto deportivo y dimensiones compactas prometen el máximo disfrete al volante.",
-    "Color":"green",
-    "Date": "21/06/2019"
-  }
-
-]
+[{
+  "id": 1,
+  "Name": "huracán",
+  "BrandId": 1,
+  "Year": 2019,
+  "Description": "Su V10 de 640 CV palpita y ruge con furor, mientras que el solo del tubo de escape superdeportivo silencia cualquier otra cosa. Las líneas aerodinámicas, perfectas y estilizadas, surcan el aire, mientras surcas la ola del placer de conducción más puro.",
+  "Color": "green",
+  "Date": "21/06/2019"
+}, {
+  "id": 2,
+  "Name": "yaris",
+  "BrandId": 8,
+  "Year": 2019,
+  "Description": "Un vehículo versátil, pensado para conductores dinámicos que buscan experiencias únicas y ahorro garantizado gracias a su motor Dual VVT-i, que te dará horas de cómoda conducción con gastos mínimos de combustible.",
+  "Color": "white",
+  "Date": "21/06/2019"
+}, {
+  "id": 3,
+  "Name": "corolla",
+  "BrandId": 8,
+  "Year": 2019,
+  "Description": "El nuevo Toyota Corolla no solo es el carro más vendido el mundo. Su nueva versión, completamente renovada, eleva todo lo que siempre te ha encantado de este emblemático Toyota: su diseño, dinamismo, confort, calidad y ahora más seguro que nunca gracias a la tecnología Toyota Safety Sense*.",
+  "Color": "blue",
+  "Date": "21/06/2019"
+}, {
+  "id": 4,
+  "Name": "polo",
+  "BrandId": 10,
+  "Year": 2019,
+  "Description": "El Polo tiene un aspecto inconfundible y deportivo. Con su largo capó, la parte frontal rsulta más ancha y dinamica gracias a sus lineas horinzontales. Su aspecto deportivo y dimensiones compactas prometen el máximo disfrete al volante.",
+  "Color": "green",
+  "Date": "21/06/2019"
+}]
